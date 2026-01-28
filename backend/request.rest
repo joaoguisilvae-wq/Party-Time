@@ -1,0 +1,81 @@
+POST http://localhost:3000/api/service
+Content-Type: application/json
+
+{
+    "name": "teste",
+    "description": "Alguma descrição",
+    "price": 1600,
+    "image": "https://br.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_20546699.htm#fromView=keyword&page=1&position=4&uuid=b74d438c-d5a6-42af-b1d5-829d8d0e54e9&query=Img"
+
+}
+
+### 
+
+GET http://localhost:3000/api/service
+
+###
+GET http://localhost:3000/api/service/6978a4f54fc7c3aed42c8e49
+
+###
+DELETE  http://localhost:3000/api/service/
+
+###
+PUT  http://localhost:3000/api/service/6978a4fa4fc7c3aed42c8e4b
+Content-Type: application/json
+
+{
+    "name": "gostosuras ou travessuras",
+    "description": "tradição de hallowen estadunidense",
+    "price": 2000,
+    "image": "https://br.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_20546699.htm#fromView=keyword&page=1&position=4&uuid=b74d438c-d5a6-42af-b1d5-829d8d0e54e9&query=Img"
+
+}
+
+### 
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "teste",
+    "author": "JG",
+    "description": "Alguma descrição",
+    "budget": 5000,
+    "image": "https://br.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_20546699.htm#fromView=keyword&page=1&position=4&uuid=b74d438c-d5a6-42af-b1d5-829d8d0e54e9&query=Img",
+    "services": [
+    {
+        "name": "teste1",
+        "description": "Alguma descrição",
+        "price": 5000,
+        "image": "https://br.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_20546699.htm#fromView=keyword&page=1&position=4&uuid=b74d438c-d5a6-42af-b1d5-829d8d0e54e9&query=Img"
+    },
+    {
+        "name": "teste2",
+        "description": "Alguma descrição",
+        "price": 1600,
+        "image": "https://br.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_20546699.htm#fromView=keyword&page=1&position=4&uuid=b74d438c-d5a6-42af-b1d5-829d8d0e54e9&query=Img"
+    }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/6979627217080d1e24ceff9c
+
+###
+DELETE  http://localhost:3000/api/parties/6979627217080d1e24ceff9c
+
+###
+PUT  http://localhost:3000/api/parties/6979630117080d1e24ceff9e
+Content-Type: application/json
+
+{
+    "title": "teste",
+    "author": "JG",
+    "description": "Alguma descrição",
+    "budget": 5000,
+    "image": "https://br.freepik.com/psd-gratuitas/renderizacao-3d-do-icone-da-interface-do-usuario_20546699.htm#fromView=keyword&page=1&position=4&uuid=b74d438c-d5a6-42af-b1d5-829d8d0e54e9&query=Img"
+
+}
