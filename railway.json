@@ -1,6 +1,6 @@
 {
   "build": {
-    "builder": "Dockerfile",
+    "builder": "Node",
     "rootDirectory": "backend"
   },
   "deploy": {
